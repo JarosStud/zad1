@@ -2,6 +2,22 @@
 
 using namespace std;
 
+bool czyPierwsza(int a){
+	
+	bool pierwsza = false;
+	if(a == 1){
+	return true;
+	}
+
+	for(int i =2;i<a;i++){
+		if(a/i == 1){
+		return true;
+		}
+	};
+	return pierwsza;
+
+};
+
 int main() {
     int a, b;
     cout << "Podaj liczbe calkowita ";
